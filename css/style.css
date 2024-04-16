@@ -1,0 +1,866 @@
+
+/*Fond-style header*/
+
+@font-face {
+    font-family: Sacramento;
+    src: url(../fond-style/Sacramento/Sacramento-Regular.ttf);
+}
+
+/*Fond-style h1*/
+@font-face {
+    font-family: one;
+    src: url(../fond-style/one/PoiretOne-Regular.ttf);
+}
+
+.iframe {
+   max-width: 100%;
+  
+   height: 300px;
+   display: block;
+   margin: auto;
+
+}
+
+/*Logo ramon*/
+
+.logoramon { 
+    height: 90px;
+    width: 250px;
+    padding: 10px;
+    margin-right: 42px;
+}
+
+/*Barra de navegacíon paginas*/
+
+
+header {
+   
+    position: fixed;
+    top: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    left: 0; 
+    z-index: 1000;
+    }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+   flex-grow: 1;
+   ;
+   
+    }
+
+
+.nav-list {
+    list-style: none;
+    
+    display: flex;
+
+}
+
+.nav-list li {
+    margin-right: 50px;
+}
+
+.nav-list li a {
+    font-family:Sacramento;
+    color: aliceblue;
+    font-size: 40px;
+    padding: 0px;
+    text-decoration: none;
+    border: 1px; solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: beige;
+    border-color: azure;
+    color: black;
+}
+
+
+/*Barra de navegacíon redes*/
+
+
+.navbar2 li {
+    display: inline-block;   
+}
+
+.nav-list2 li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+    text-indent: -9999px;
+    margin-right: 20px; 
+    text-decoration: none;
+    padding: 10px;  
+    position: relative; 
+    
+}
+
+.instagram {
+    background-image: url(..img/insta.jpg);
+}
+
+.facebook {
+    background-image: url(../img/face.jpg);
+}
+
+.nav-list2 li a:hover::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 207, 161, 0.653);
+
+}
+
+/* H */
+
+
+h1 {
+    color: #f2eaea;
+    margin-top: 75px;
+    margin-bottom: 0;
+    padding: 3%;
+    text-align: center;
+    font-family:one;
+    font-size: 50px;
+}
+
+h2 {
+   padding: 15px;
+    text-align: center;
+    font-family: one;
+    font-size: 30px;  
+    color: #f1dddd;    
+    margin-top: 20px;
+    
+ 
+   
+}
+h3 {
+    text-align: center;
+    font-family: one;
+    font-size: 24px;  
+    color: #f1dddd; 
+}
+
+h4 {
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+}
+
+
+ /*Fondos de pantalla*/
+
+ .fondo-index {
+    background-image: url(../img/fondo.nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .fondo-salon {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/fondosalon.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+
+ .fondo-catering {
+    background-image: url(../img/fondocaterig.jpg);
+    background-size: cover;
+    background-position: center;
+
+ }
+
+ .fondo-parque {
+   background-image: url(../img/fondoparque.jpg);
+   background-size: cover;
+   background-position: center;
+
+ }
+ .fondo-contacto {
+   background-image: url(../img/fondocontactanos.jpg);
+   background-size: cover;
+   background-position: center;
+
+ }
+
+/* Nuestro esapcio */
+
+
+.imgsalon23 {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 20px;
+   align-items: center;
+}
+
+.imgsalon1  {
+   max-width: 100%;
+   max-height: 900px;
+   display: block;
+   margin: auto;
+   box-shadow: 9px 9px 9px;
+   
+}
+
+.imgsalon2 {
+    max-width: 100%;
+    max-height: 900px;
+    display: block;
+    margin: auto;
+    box-shadow: -9px 9px 9px;
+}
+
+.carousel {
+   max-width: 100%;   
+   
+}
+
+
+.carousel-inner {
+   max-height: 700px;
+ 
+} 
+.carousel-item {
+   height: 700px;
+}
+
+
+/* Catering */
+
+.imgcone {
+    max-width: 100%;
+    max-height: 900px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+
+ .catering-one {
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    align-items: center;
+    height: 300px;
+    margin: 20px;
+    margin-bottom: 200px;
+    position: relative;
+
+    
+   
+   
+   
+ }
+
+ .catering-one img {
+   
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+ }
+
+ .h2top {
+   margin-top: 200px;
+   
+   
+ }
+
+.card {
+   
+   background-color: rgba(156, 139, 106, 0.473);
+   border: 2px solid rgb(255, 255, 255);
+   transition: border-radius 0.3s, box-shadow: 0.3s;
+  
+  
+}
+
+.card:hover {
+   background-color: #242323;
+   border-radius: 20px;
+   box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+}
+
+.card-text {
+   color: #ffffff;
+}
+
+
+ .catdivtorta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    align-items: center;
+ }
+
+ .catdivtorta img {
+    padding: 5px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: -10px 9px 9px;
+
+ }
+
+ 
+/* Salon */
+
+ .imgcorpo3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    align-items: center;
+    
+ }
+ .imgcorpo3 img {
+    max-width: 100%;
+ }
+    
+ .imgcorpo{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 10px;
+   align-items: center;
+   margin: 20px;
+   
+    
+ }
+
+ .imgcorpo img {
+    max-width: 100%;
+    height: 500px;
+   box-shadow: -9px 9px 9px;
+   }
+
+   .cardsalon {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      justify-content: center;
+    }
+    
+      
+   
+
+ .card-title {
+   color: #f1dddd;
+ }
+
+
+ /* Pqrque */
+
+ 
+ .imgparque1 {
+   
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 700px; 
+ }
+ .imgparque2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    align-items: center;
+ }
+
+ .imgparque2 img {
+    max-width: 100%;
+ }
+
+ .imgparque3 {
+   padding: 40px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 700px;
+ }
+
+
+ /*footeer*/
+
+ footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f2eaea;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1000;
+   
+ }
+ footer section {
+    flex-grow: 1;
+    display: inline-block;
+    margin: 0 auto;
+    
+ }
+ footer li {
+    display: inline;
+ }
+
+ footer li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size:cover;
+    text-indent: -9999px;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px;
+ 
+ }
+footer nav ul {
+    margin-bottom: 10px;
+}
+
+ 
+ footer  nav ul li {
+    display: inline; 
+    }
+ 
+ .ubicacion {
+   
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   text-align: center;
+} 
+
+  
+  
+.whap {
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+
+ .instagram {
+    background-image: url(../img/insta.jpg);
+ }
+
+ .facebook {
+    background-image: url(../img/face.jpg);
+ }
+
+.maplogo {
+    width:70px;
+    height:70px;
+
+}
+
+.whaplogo {
+    
+    width: 60px;
+    height: 60px;
+}
+
+/* Formulario */
+
+.form-1 {
+    width: 900px;
+    background-color: rgba(255, 255, 255, 0.753);
+    padding: 40px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-family: one ;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+ }
+ .input {
+    width:100%;
+    
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-bottom:auto;
+    border-radius: 10px;
+    border: #433030 solid;
+ }
+
+ .iframe {
+   width: 100%;
+   max-width: 1000px;
+   height: 300px;
+ }
+ 
+
+/*Mobile*/
+
+.hambur {
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+   padding: 0;
+   margin: auto 15px;
+}
+
+.hambur span {
+   width: 30px;
+   height: 4px;
+   background-color: #333;
+   transition: all 0.3s ease;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+ /* Navbar */
+
+
+   .hambur {
+       display: flex;
+   }
+
+   .logoramon { 
+      height: 80px;
+      width: 150px;
+      padding: 10px;
+      margin-right: 42px;
+  }
+
+   .nav-list {
+       display: none;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 20px;
+   }
+
+   .nav-list li {
+       margin: 10px 0;
+   }
+
+   .nav-list li a {
+       padding: 10px 0;
+       border-bottom: 1px solid #fcffff;
+   }
+
+   .navbar2 {
+       display: none;
+   }
+
+    /* Carousel */
+
+
+   .carousel {
+      max-width: 100%;   
+   }
+   
+   .carousel-inner {
+      max-height: auto;
+   } 
+   
+   .carousel-item {
+      height: auto; 
+   }
+
+
+   /* imgsalon23 */
+
+   .imgsalon23 {
+      grid-template-columns: 1fr;
+   }
+
+   .imgsalon23 .imgsalon1,
+   .imgsalon23 .imgsalon2 {
+      width: 100%;
+      padding: 10px;
+   }
+   /* H */
+
+   h1{
+      text-align: center;
+      font-size: 24px;
+   }
+   h2 {
+      margin-top: 0;
+      text-align: center;
+      font-size: 25px;
+     
+
+   }
+
+
+   /* Catering */
+
+
+   .catering-one {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    
+      position: relative;
+      z-index: 18;
+      padding: 5%;
+    
+      
+    }
+  
+    .card {
+      width: calc(50% - 20px); 
+      margin-bottom: 0px;
+    
+      }
+
+   
+  .h2top h2{
+   top: 500px;
+  position:relative;
+  
+  z-index: 20;
+  }
+
+  .catdivtorta {
+   display: flex;
+  flex-wrap: wrap;
+   justify-content: center;
+   position: relative;
+   z-index: 22;
+   margin-top: 500px;
+ }
+ 
+ .catdivtorta img {
+   width: 70%; 
+   height:auto; 
+   margin-bottom: 10px; 
+   
+ }
+
+
+ /* fOOTER */
+
+footer {
+   text-align: center;
+   padding: 20px;
+   height: auto;
+   width: auto;
+}
+
+footer section {
+   margin-bottom: 20px;
+}
+
+footer h4 {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+footer ul {
+   padding-left: 0;
+   list-style: none;
+}
+
+footer ul li {
+   margin-bottom: 10px;
+}
+
+footer .maplogo,
+footer .whaplogo {
+   width: 40px;
+   height: auto;
+}
+
+
+  }
+
+
+  /* Mobile */
+
+  @media only screen and (max-width: 480px) {
+
+   /* Navbar */
+  
+  
+     .hambur {
+         display: flex;
+     }
+  
+     .logoramon { 
+        height: 60px;
+        width: 100px;
+        padding: 10px;
+        margin-right: 30px;
+    }
+  
+     .nav-list {
+         display: none;
+         flex-direction: column;
+         align-items: center;
+         margin-top: 20px;
+     }
+  
+     .nav-list li {
+         margin: 10px 0;
+     }
+  
+     .nav-list li a {
+         padding: 10px 0;
+         border-bottom: 1px solid #fcffff;
+     }
+  
+     .navbar2 {
+         display: none;
+     }
+  
+      /* Carousel */
+  
+  
+     .carousel {
+        max-width: 100%;   
+     }
+     
+     .carousel-inner {
+        max-height: auto;
+     } 
+     
+     .carousel-item {
+        height: auto; 
+     }
+  
+  
+     /* imgsalon23 */
+  
+     .imgsalon23 {
+        grid-template-columns: 1fr;
+     }
+  
+     .imgsalon23 .imgsalon1,
+     .imgsalon23 .imgsalon2 {
+        width: 100%;
+        padding: 10px;
+     }
+     /* H */
+  
+     h1{
+        text-align: center;
+        font-size: 20px;
+     }
+     h2 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 15px;
+       
+  
+     }
+  
+  
+     /* Catering */
+  
+  
+     .catering-one {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        position: relative;
+        z-index: 18;
+        padding: 4%;
+      
+        
+      }
+    .catering-one img {
+      width:auto;
+      height: auto;
+    }
+      .card {
+        width: 80%; 
+      
+        }
+  
+     
+    .h2top h2{
+     top: 830px;
+    position:relative;
+    z-index: 20;
+    }
+  
+    .catdivtorta {
+     display: flex;
+    flex-wrap: wrap;
+     justify-content: center;
+     position: relative;
+     z-index: 22;
+     margin-top: 840px;
+   }
+   
+   .catdivtorta img {
+     width: 70%; 
+     height:auto; 
+     margin-bottom: 10px; 
+     
+   }
+  
+  
+   /* fOOTER */
+  
+  footer {
+     text-align: center;
+     padding: 30px;
+     height: auto;
+     width: auto;
+  }
+  
+  footer section {
+     margin-bottom: 20px;
+  }
+  
+  footer h4 {
+     font-size: 14px;
+     margin-bottom: 10px;
+  }
+  
+  footer ul {
+     padding-left: 0;
+     list-style: none;
+  }
+  
+  footer ul li {
+     margin-bottom: 10px;
+  }
+  
+  footer .maplogo,
+  footer .whaplogo {
+     width: 30px;
+     height: auto;
+  }
+  
+  .instagram {
+   background-image: url(../img/insta.jpg);
+   
+}
+
+.facebook {
+   background-image: url(../img/face.jpg);
+}
+
+  
+    }
