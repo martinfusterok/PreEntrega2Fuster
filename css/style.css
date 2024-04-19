@@ -32,6 +32,9 @@
 
 /*Barra de navegacíon paginas*/
 
+* {
+   box-sizing: border-box;
+}
 
 header {
    
@@ -69,7 +72,6 @@ header {
     font-family:Sacramento;
     color: aliceblue;
     font-size: 40px;
-    padding: 0px;
     text-decoration: none;
     border: 1px; solid transparent;
     border-radius: 5px;
@@ -110,6 +112,7 @@ header {
 .facebook {
     background-image: url(../img/face.jpg);
 }
+
 
 .nav-list2 li a:hover::before {
     content:"";
@@ -507,26 +510,6 @@ footer nav ul {
  }
  
 
-/*Mobile*/
-
-.hambur {
-   display: none;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 20px;
-   height: 20px;
-   cursor: pointer;
-   padding: 0;
-   margin: auto 15px;
-}
-
-.hambur span {
-   width: 30px;
-   height: 4px;
-   background-color: #333;
-   transition: all 0.3s ease;
-}
-
 
 
 
@@ -535,10 +518,12 @@ footer nav ul {
 
  /* Navbar */
 
-
-   .hambur {
-       display: flex;
-   }
+ .white-toggler-icon {
+   background-color: white;
+   width: 2.5em;
+   height: 2.5em;
+}
+   
 
    .logoramon { 
       height: 80px;
@@ -700,10 +685,11 @@ footer .whaplogo {
    /* Navbar */
   
   
-     .hambur {
-         display: flex;
-     }
-  
+   .white-toggler-icon {
+      background-color: white;
+      width: 1.5em;
+      height: 1.5em;
+   }
      .logoramon { 
         height: 60px;
         width: 100px;
